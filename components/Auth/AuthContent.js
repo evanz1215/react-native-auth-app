@@ -16,6 +16,14 @@ function AuthContent({ isLogin, onAuthenticate }) {
     confirmPassword: false,
   });
 
+  function switchAuthModeHandler() {
+    if (isLogin) {
+      navigation.replace("Signup");
+    } else {
+      navigation.replace("Login");
+    }
+  }
+
   function submitHandler(credentials) {
     let { email, confirmEmail, password, confirmPassword } = credentials;
 

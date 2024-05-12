@@ -27,3 +27,5 @@ export function createUser(email, password) {
 export function login(email, password) {
   return authenticate("signInWithPassword", email, password);
 }
+
+export default instance;
